@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- HTML (Hypertext Markup Language)
+
+Hypertext: hipertexto, texto que contem links
+Markup: Marcação do texto, elemento html ou tag
+
+Box Model: Todos os elementos html serão considerados caixas. cada elemento possui propriedades próprias.
+
+Tags: elementos do html
+Atributos: Adicionam informações e/ou configurações à uma tag.
+ex: href: informa a referencia de um link-->
+
+<html lang="pt-br" class="dark">
+  <!-- lang define o idioma do site -->
+  <head>
+    <!-- <meta>
+      A tag <meta> define metadados de um html (metadados são informações sobre dados) 
+    
+      Sempre vão dentro do elemento <head> e são normalmente usadas para especificar conjunto de caracteres, descrição da página, palavras-chave, autor do documento e configurações de viewport.
+      
+      Os metadados são usados ​​por navegadores (como exibir conteúdo ou recarregar página), mecanismos de busca (palavras-chave) e outros serviços da web.
+
+      Atributos:
+        - Charset: especifica quais caracteres o documento irá usar;
+        - Name: Nomeia o metadado;
+        - http-equiv: fornece ao navegador instruções de como renderizar o site, necessario para navegadores antigos como o internet explore.
+        - Content: Especifica valores associados ao name ou ao http-equiv;
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- A viewport é a área visível do usuário de uma página da web. Ela varia com o dispositivo - será menor em um celular do que em uma tela de computador.
+    
+    Nesse caso o content da ao navegador instruções de como controlar as dimenções do site.
+
+      - width=device-width: define a largura da página para seguir a largura da tela do dispositivo (que irá variar dependendo do dispositivo).
+
+      - initial-scale=1.0: define o nível de zoom inicial quando a página é carregada pela primeira vez pelo navegador.
+    -->
+
+    <meta name="autor" content="Sortjakke" />
+    <!-- Define o nome do autor do site-->
+
+    <meta name="description" content="Um estudo sobre front-end" />
+    <!-- Descreve o site-->
+
+    <meta name="kaywords" content="HTML, CSS, JavaScript" />
+    <!-- Define palavras chaves para o mecanismo de busca -->
+
+    <title>Document</title>
+    <!-- Nomeia a guia do navegador -->
+
+    <style></style>
+    <!-- Adiciona informações de aparencia do site, seria um css interno -->
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <!-- link para uma folha de estilo externa -->
+
+    <base />
+    <!-- especifica um URL padrão e um alvo para todos os links em uma página -->
+  </head>
+  <body>
+    <div id="conteiner">
+      <div id="profile">
+        <img src="./assets/avatar.png" alt="imagem do usuário" />
+        <p>@maykbrito</p>
+      </div>
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+      <ul>
+        <!-- ul (unordered list - lista desordenada): marcado por pontos-->
+        <!-- ol (ordered list - lista ordenada): marcado por numeros-->
+        <!-- dl (description list): lista com descrição-->
+        <!-- li: itens da lista-->
+        <!-- dt: item a ser descrito - dd: descrição do item-->
+        <!-- a: define um hiperlink -->
+        <li><a href="#" target="_blank">Inscreva-se no NLW</a></li>
+        <li><a href="#" target="_blank">Baixar meu-ebook</a></li>
+        <li><a href="#" target="_blank">Ver meu portifólio</a></li>
+        <li><a href="#" target="_blank">Conheça o Explorer</a></li>
+      </ul>
+      <div id="social-links">
+        <a href="#" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="#" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+        <a href="#" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+      <footer>
+        Feito com <ion-icon name="heart"></ion-icon> por
+        <span>Sortjakke</span>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
